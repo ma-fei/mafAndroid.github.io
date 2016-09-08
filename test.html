@@ -1,0 +1,28 @@
+<span style="font-size:18px;"><script>  
+function startAPP(){  
+window.location = "**://**.**/**";  
+}  
+function downloadAPP(){  
+window.location = "http://IP/**/**.apk";  
+}  
+  
+</script>  
+<style type="text/css">  
+        body{background:#D2D460;text-align:center;margin-top:10%}  
+        div{width:100%;margin:0 auto;background:#fff;text-align:left;}  
+</style>  
+</head>  
+<body>  
+  
+<?php   
+$var_name =  $_GET["isappinstalled"];   
+if ($var_name=="1"){  
+    echo '<img src=images/start.png alt=打开APP onclick=startAPP() ></img>';  
+}else if ($var_name=="0"){  
+    echo '<img src=images/download.png alt=打开APP onclick=downloadAPP() ></img>';  
+}else{  
+    echo '<img src=images/welcome.png alt=打开APP onclick=startAPP() ></img>';  
+}  
+?>  
+  
+</body></span>
